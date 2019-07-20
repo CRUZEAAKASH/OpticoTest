@@ -19,7 +19,8 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("https://optico.herokuapp.com/");
+			FileInputStream ip = new FileInputStream(
+					"C:\\Users\\aakas\\learning\\Optico\\OpticoTest\\OpticoTest\\src\\main\\java\\com\\optico\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -30,9 +31,12 @@ public class TestBase {
 
 	public static void initalization() {
 		String browserName = prop.getProperty("browser");
+		System.out.print("printing browsername" + browserName);
 		if (browserName.equals("chrome")) {
+			System.out.print("Inside the loop");
 			System.setProperty("webdriver.chrome.driver", "C:\\softwares\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
+			System.out.print("Printing driver object" + driver);
 		}
 
 		driver.manage().window().maximize();
