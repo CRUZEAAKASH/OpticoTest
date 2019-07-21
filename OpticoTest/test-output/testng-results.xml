@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31008" started-at="2019-07-20T16:07:48Z" finished-at="2019-07-20T16:08:19Z">
+  <suite name="Suite" duration-ms="32" started-at="2019-07-21T04:59:14Z" finished-at="2019-07-21T04:59:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31008" started-at="2019-07-20T16:07:48Z" finished-at="2019-07-20T16:08:19Z">
-      <class name="com.optico.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@1275dab]" name="setup" is-config="true" duration-ms="30183" started-at="2019-07-20T16:07:48Z" finished-at="2019-07-20T16:08:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:0, instance:com.optico.qa.test.LoginPageTest@1275dab]" name="ValidateLoginPageLogoTest" duration-ms="84" started-at="2019-07-20T16:08:18Z" finished-at="2019-07-20T16:08:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateLoginPageLogoTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.optico.qa.test.LoginPageTest@1275dab]" name="login" duration-ms="685" started-at="2019-07-20T16:08:18Z" finished-at="2019-07-20T16:08:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.optico.qa.test.LoginPageTest@1275dab]" name="verifyTitle" duration-ms="12" started-at="2019-07-20T16:08:19Z" finished-at="2019-07-20T16:08:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@1275dab]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-20T16:08:19Z" finished-at="2019-07-20T16:08:19Z">
+    <test name="Test" duration-ms="32" started-at="2019-07-21T04:59:14Z" finished-at="2019-07-21T04:59:14Z">
+      <class name="com.optico.qa.test.RegisterCustomerPageTest">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@15530b9]" name="TearDown" is-config="true" duration-ms="20" started-at="2019-07-21T04:59:14Z" finished-at="2019-07-21T04:59:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.optico.qa.test.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.optico.qa.test.RegisterCustomerPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

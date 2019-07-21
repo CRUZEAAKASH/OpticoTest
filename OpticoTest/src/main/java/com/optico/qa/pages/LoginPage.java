@@ -33,14 +33,14 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 
-	public RegisterCustomer login() {
+	public RegisterCustomerPage login() {
 		String un = prop.getProperty("username");
 		String pswd = prop.getProperty("password");
 		userName.sendKeys(un);
 		password.sendKeys(pswd);
 		login.click();
 
-		return new RegisterCustomer();
+		return new RegisterCustomerPage();
 
 	}
 }

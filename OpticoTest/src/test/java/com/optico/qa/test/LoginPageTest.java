@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.optico.qa.pages.LoginPage;
-import com.optico.qa.pages.RegisterCustomer;
+import com.optico.qa.pages.RegisterCustomerPage;
 import com.optioc.qa.base.TestBase;
 
 public class LoginPageTest extends TestBase {
 
 	LoginPage loginPage;
-	RegisterCustomer registercustomer;
+	RegisterCustomerPage registercustomer;
 
 	public LoginPageTest() {
 		super();
