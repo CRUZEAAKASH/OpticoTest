@@ -11,8 +11,8 @@ import com.optioc.qa.base.TestBase;
 
 public class LoginPageTest extends TestBase {
 
-	LoginPage loginPage;
-	RegisterCustomerPage registercustomer;
+	static LoginPage loginPage;
+	static RegisterCustomerPage registercustomer;
 
 	public LoginPageTest() {
 		super();
@@ -24,20 +24,20 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void ValidateLoginPageLogoTest() {
 		String logo = loginPage.ValidateLoginPageLogo();
 		Assert.assertEquals(logo, "Optico");
 	}
 
-	@Test
-	public void verifyTitle() {
+	@Test(priority = 2)
+	public void verifyTitleTest() {
 		String title = loginPage.verifyTitle();
 		Assert.assertEquals(title, "Optico");
 	}
 
-	@Test
-	public void login() {
+	@Test(priority = 3)
+	public void loginTest() {
 		registercustomer = loginPage.login();
 	}
 

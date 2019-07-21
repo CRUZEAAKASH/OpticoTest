@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.optico.qa.test.LoginPageTest">
+      <class name="com.optico.qa.test.RegisterCustomerPageTest">
         <methods>
-          <include name="TearDown"/>
-          <include name="verifyTitle"/>
-          <include name="login"/>
           <include name="setup"/>
+          <include name="RegisterCustomerTest"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.optico.qa.test.LoginPageTest -->
+      </class> <!-- com.optico.qa.test.RegisterCustomerPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
