@@ -1,199 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="84855" started-at="2019-07-22T17:49:39Z" finished-at="2019-07-22T17:51:03Z">
+  <suite name="Suite" duration-ms="31287" started-at="2019-07-22T17:54:29Z" finished-at="2019-07-22T17:55:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="84855" started-at="2019-07-22T17:49:39Z" finished-at="2019-07-22T17:51:03Z">
+    <test name="Test" duration-ms="31287" started-at="2019-07-22T17:54:29Z" finished-at="2019-07-22T17:55:00Z">
       <class name="com.optico.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="setup" is-config="true" duration-ms="60792" started-at="2019-07-22T17:49:39Z" finished-at="2019-07-22T17:50:39Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="setup" is-config="true" duration-ms="20208" started-at="2019-07-22T17:54:29Z" finished-at="2019-07-22T17:54:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="ValidateLoginPageLogoTest" duration-ms="93" started-at="2019-07-22T17:50:39Z" finished-at="2019-07-22T17:50:39Z">
+        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="ValidateLoginPageLogoTest" duration-ms="72" started-at="2019-07-22T17:54:49Z" finished-at="2019-07-22T17:54:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLoginPageLogoTest -->
-        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="verifyTitleTest" duration-ms="10" started-at="2019-07-22T17:50:39Z" finished-at="2019-07-22T17:50:39Z">
+        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="verifyTitleTest" duration-ms="12" started-at="2019-07-22T17:54:49Z" finished-at="2019-07-22T17:54:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="loginTest" duration-ms="679" started-at="2019-07-22T17:50:39Z" finished-at="2019-07-22T17:50:40Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="loginTest" duration-ms="608" started-at="2019-07-22T17:54:49Z" finished-at="2019-07-22T17:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-22T17:51:03Z" finished-at="2019-07-22T17:51:03Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-22T17:55:00Z" finished-at="2019-07-22T17:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.optico.qa.test.LoginPageTest -->
       <class name="com.optico.qa.test.RegisterCustomerPageTest">
-        <test-method status="FAIL" signature="verifyHeadingTest()[pri:4, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="verifyHeadingTest" duration-ms="13189" started-at="2019-07-22T17:50:40Z" finished-at="2019-07-22T17:50:53Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(), 'Register Customer')] (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(), 'Register Customer')] (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.optico.qa.pages.RegisterCustomerPage.verifyHeading(RegisterCustomerPage.java:67)
-at com.optico.qa.test.RegisterCustomerPageTest.verifyHeadingTest(RegisterCustomerPageTest.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Register Customer')]"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-4BSBE21', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\aakas\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57798}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 450c82dbac7fed9444152b1337e5700f
-*** Element info: {Using=xpath, value=//*[contains(text(), 'Register Customer')]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 27 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="verifyHeadingTest()[pri:4, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="verifyHeadingTest" duration-ms="3258" started-at="2019-07-22T17:54:50Z" finished-at="2019-07-22T17:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeadingTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T17:50:40Z" finished-at="2019-07-22T17:50:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T17:54:50Z" finished-at="2019-07-22T17:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-22T17:50:53Z" finished-at="2019-07-22T17:50:53Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-22T17:54:53Z" finished-at="2019-07-22T17:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T17:50:53Z" finished-at="2019-07-22T17:50:53Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T17:54:53Z" finished-at="2019-07-22T17:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="RegisterCustomerTest()[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="RegisterCustomerTest" duration-ms="10038" started-at="2019-07-22T17:50:53Z" finished-at="2019-07-22T17:51:03Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='mat-select-value']"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-4BSBE21', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\aakas\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57798}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 450c82dbac7fed9444152b1337e5700f
-*** Element info: {Using=xpath, value=//*[@class='mat-select-value']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='mat-select-value']"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-4BSBE21', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\aakas\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57798}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 450c82dbac7fed9444152b1337e5700f
-*** Element info: {Using=xpath, value=//*[@class='mat-select-value']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
-at com.optico.qa.pages.RegisterCustomerPage.registerCustomer(RegisterCustomerPage.java:74)
-at com.optico.qa.test.RegisterCustomerPageTest.RegisterCustomerTest(RegisterCustomerPageTest.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="RegisterCustomerTest()[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="RegisterCustomerTest" duration-ms="7075" started-at="2019-07-22T17:54:53Z" finished-at="2019-07-22T17:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCustomerTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-22T17:51:03Z" finished-at="2019-07-22T17:51:03Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-22T17:55:00Z" finished-at="2019-07-22T17:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
