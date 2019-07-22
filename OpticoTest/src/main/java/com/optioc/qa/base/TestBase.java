@@ -15,12 +15,13 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	public static String currentURL = System.getProperty("user.dir");
 
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\aakas\\learning\\Optico\\OpticoTest\\OpticoTest\\src\\main\\java\\com\\optico\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream(currentURL
+					+ "\\src\\main\\java\\com\\optico\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -34,12 +35,13 @@ public class TestBase {
 		System.out.print("printing browsername" + browserName);
 		if (browserName.equals("chrome")) {
 			System.out.print("Inside the loop");
-			System.setProperty("webdriver.chrome.driver", "C:\\softwares\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",
+					currentURL + "\\src\\main\\java\\com\\optico\\qa\\util\\chromedriver.exe");
 			driver = new ChromeDriver();
 			System.out.print("Printing driver object" + driver);
 		}
 
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
