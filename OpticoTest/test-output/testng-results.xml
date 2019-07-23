@@ -1,59 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31287" started-at="2019-07-22T17:54:29Z" finished-at="2019-07-22T17:55:00Z">
+  <suite name="Optico Test Suite" duration-ms="85715" started-at="2019-07-23T03:22:54Z" finished-at="2019-07-23T03:24:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31287" started-at="2019-07-22T17:54:29Z" finished-at="2019-07-22T17:55:00Z">
+    <test name="Optico Test" duration-ms="85715" started-at="2019-07-23T03:22:54Z" finished-at="2019-07-23T03:24:20Z">
       <class name="com.optico.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="setup" is-config="true" duration-ms="20208" started-at="2019-07-22T17:54:29Z" finished-at="2019-07-22T17:54:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@653222]" name="setup" is-config="true" duration-ms="29983" started-at="2019-07-23T03:22:54Z" finished-at="2019-07-23T03:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="ValidateLoginPageLogoTest" duration-ms="72" started-at="2019-07-22T17:54:49Z" finished-at="2019-07-22T17:54:49Z">
+        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.LoginPageTest@653222]" name="ValidateLoginPageLogoTest" duration-ms="64" started-at="2019-07-23T03:23:24Z" finished-at="2019-07-23T03:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLoginPageLogoTest -->
-        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="verifyTitleTest" duration-ms="12" started-at="2019-07-22T17:54:49Z" finished-at="2019-07-22T17:54:49Z">
+        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.LoginPageTest@653222]" name="verifyTitleTest" duration-ms="12" started-at="2019-07-23T03:23:24Z" finished-at="2019-07-23T03:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="loginTest" duration-ms="608" started-at="2019-07-22T17:54:49Z" finished-at="2019-07-22T17:54:50Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.LoginPageTest@653222]" name="loginTest" duration-ms="592" started-at="2019-07-23T03:23:24Z" finished-at="2019-07-23T03:23:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@1fc5af1]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-22T17:55:00Z" finished-at="2019-07-22T17:55:00Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@653222]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-23T03:24:20Z" finished-at="2019-07-23T03:24:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.optico.qa.test.LoginPageTest -->
       <class name="com.optico.qa.test.RegisterCustomerPageTest">
-        <test-method status="PASS" signature="verifyHeadingTest()[pri:4, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="verifyHeadingTest" duration-ms="3258" started-at="2019-07-22T17:54:50Z" finished-at="2019-07-22T17:54:53Z">
+        <test-method status="PASS" signature="verifyHeadingTest()[pri:4, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="verifyHeadingTest" duration-ms="3279" started-at="2019-07-23T03:23:25Z" finished-at="2019-07-23T03:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeadingTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T17:54:50Z" finished-at="2019-07-22T17:54:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:25Z" finished-at="2019-07-23T03:23:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-22T17:54:53Z" finished-at="2019-07-22T17:54:53Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:28Z" finished-at="2019-07-23T03:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T17:54:53Z" finished-at="2019-07-22T17:54:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="RegisterCustomerTest()[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="RegisterCustomerTest" duration-ms="7075" started-at="2019-07-22T17:54:53Z" finished-at="2019-07-22T17:55:00Z">
+        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="RegisterCustomerTest" duration-ms="12421" started-at="2019-07-23T03:23:29Z" data-provider="getOpticoTestData" finished-at="2019-07-23T03:23:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aakash Shinghal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30-01-1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.23456789E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[AP]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCustomerTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@5792a0]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-22T17:55:00Z" finished-at="2019-07-22T17:55:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:29Z" finished-at="2019-07-23T03:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:41Z" finished-at="2019-07-23T03:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="RegisterCustomerTest" duration-ms="13302" started-at="2019-07-23T03:23:41Z" data-provider="getOpticoTestData" finished-at="2019-07-23T03:23:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Miss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chandrapurnima Bhatnagar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[28-02-1991]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[28.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.23456789E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[CP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterCustomerTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:41Z" finished-at="2019-07-23T03:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:55Z" finished-at="2019-07-23T03:23:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="RegisterCustomerTest" duration-ms="12573" started-at="2019-07-23T03:23:55Z" data-provider="getOpticoTestData" finished-at="2019-07-23T03:24:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Roopak Nijhara]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27-03-1992]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[27.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.23456789E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[RP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterCustomerTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-23T03:23:55Z" finished-at="2019-07-23T03:23:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="TearDown" is-config="true" duration-ms="4" started-at="2019-07-23T03:24:07Z" finished-at="2019-07-23T03:24:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="setup" is-config="true" duration-ms="1" started-at="2019-07-23T03:24:07Z" finished-at="2019-07-23T03:24:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="RegisterCustomerTest" duration-ms="12614" started-at="2019-07-23T03:24:07Z" data-provider="getOpticoTestData" finished-at="2019-07-23T03:24:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aditya Tyagi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[26-04-1993]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[26.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.23456789E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[AP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterCustomerTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@132ec19]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-23T03:24:20Z" finished-at="2019-07-23T03:24:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.optico.qa.test.RegisterCustomerPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Optico Test -->
+  </suite> <!-- Optico Test Suite -->
 </testng-results>

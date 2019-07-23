@@ -53,6 +53,9 @@ public class RegisterCustomerPage extends TestBase {
 	@FindBy(xpath = "//span[@class='mat-button-wrapper' and contains(text(), 'Save')]")
 	WebElement save;
 
+	@FindBy(xpath = "//div[contains(text(), 'New Customer')]")
+	WebElement newCustomer;
+
 	public RegisterCustomerPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -70,28 +73,31 @@ public class RegisterCustomerPage extends TestBase {
 		return heading;
 	}
 
-	public ViewCustomerPage registerCustomer() throws InterruptedException {
+	public ViewCustomerPage registerCustomer(String Customertitle, String CustomerName, String CustomerGender,
+			String CustomerDOB, String CustomerAge, String CustomerMobile, String CustomerAddress)
+			throws InterruptedException {
+		newCustomer.click();
 		title.click();
 		salutation.click();
-		Name.sendKeys("Aakash");
+		Name.sendKeys(CustomerName);
 		Thread.sleep(3000);
-		
+
 		datePicker.click();
 		Thread.sleep(1000);
 		YearDropDown.click();
-		
+
 		previousYear.click();
-		
+
 		Year.click();
-		
+
 		Month.click();
-		
+
 		Date.click();
 		Thread.sleep(1000);
-		Mobile.sendKeys("1234567890");
-		address.sendKeys("Pune");
+		Mobile.sendKeys(CustomerMobile);
+		address.sendKeys(CustomerAddress);
 		save.click();
-		
+		Thread.sleep(5000);
 		return new ViewCustomerPage();
 	}
 }
