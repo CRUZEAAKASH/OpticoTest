@@ -6,7 +6,7 @@
       <class name="com.optico.qa.test.RegisterCustomerPageTest">
         <methods>
           <include name="setup"/>
-          <include name="RegisterCustomerTest" invocation-numbers="1 2 3"/>
+          <include name="RegisterCustomerTest" invocation-numbers="0 1 2 3"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.optico.qa.test.RegisterCustomerPageTest -->

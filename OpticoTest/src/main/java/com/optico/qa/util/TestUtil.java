@@ -1,12 +1,16 @@
 package com.optico.qa.util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.optioc.qa.base.TestBase;
@@ -17,7 +21,7 @@ public class TestUtil extends TestBase {
 	public static long IMPLICIT_WAIT = 10;
 
 	public static WebDriverWait wait = new WebDriverWait(driver, 20);
-	public static String Test_Data_Sheet_Path = currentURL
+	public static String Test_Data_Sheet_Path = currentProjectdirectory
 			+ "\\src\\main\\java\\com\\optico\\qa\\testdata\\TestData.xlsx";
 	public static XSSFWorkbook book;
 	public static XSSFSheet sheet;
@@ -52,5 +56,11 @@ public class TestUtil extends TestBase {
 		}
 		file.close();
 		return data;
+	}
+
+	public static void takeScreenShot() throws IOException {
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src,
+				new File(currentProjectdirectory + "\\Screenshots\\" + System.currentTimeMillis() + ".png"));
 	}
 }
