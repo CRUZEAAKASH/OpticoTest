@@ -1,51 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="6" ignored="0" total="8" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Optico Test Suite" duration-ms="77484" started-at="2019-07-28T08:46:33Z" finished-at="2019-07-28T08:47:51Z">
+  <suite name="Optico Test Suite" duration-ms="29866" started-at="2019-07-28T09:30:30Z" finished-at="2019-07-28T09:31:00Z">
     <groups>
     </groups>
-    <test name="Optico Test" duration-ms="77484" started-at="2019-07-28T08:46:33Z" finished-at="2019-07-28T08:47:51Z">
+    <test name="Optico Test" duration-ms="29866" started-at="2019-07-28T09:30:30Z" finished-at="2019-07-28T09:31:00Z">
       <class name="com.optico.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@1e88b3c]" name="setup" is-config="true" duration-ms="21055" started-at="2019-07-28T08:46:33Z" finished-at="2019-07-28T08:46:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.LoginPageTest@10d63be]" name="setup" is-config="true" duration-ms="26567" started-at="2019-07-28T09:30:30Z" finished-at="2019-07-28T09:30:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.LoginPageTest@1e88b3c]" name="ValidateLoginPageLogoTest" duration-ms="96" started-at="2019-07-28T08:46:54Z" finished-at="2019-07-28T08:46:54Z">
+        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.LoginPageTest@10d63be]" name="ValidateLoginPageLogoTest" duration-ms="88" started-at="2019-07-28T09:30:57Z" finished-at="2019-07-28T09:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLoginPageLogoTest -->
-        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.LoginPageTest@1e88b3c]" name="verifyTitleTest" duration-ms="28" started-at="2019-07-28T08:46:54Z" finished-at="2019-07-28T08:46:54Z">
+        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.LoginPageTest@10d63be]" name="verifyTitleTest" duration-ms="12" started-at="2019-07-28T09:30:57Z" finished-at="2019-07-28T09:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.LoginPageTest@1e88b3c]" name="loginTest" duration-ms="1071" started-at="2019-07-28T08:46:54Z" finished-at="2019-07-28T08:46:56Z">
+        <test-method status="FAIL" signature="loginTest()[pri:3, instance:com.optico.qa.test.LoginPageTest@10d63be]" name="loginTest" duration-ms="32" started-at="2019-07-28T09:30:57Z" finished-at="2019-07-28T09:30:57Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy31.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy30.sendKeys(Unknown Source)
+at com.optico.qa.pages.LoginPage.login(LoginPage.java:39)
+at com.optico.qa.test.LoginPageTest.loginTest(LoginPageTest.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@1e88b3c]" name="TearDown" is-config="true" duration-ms="641" started-at="2019-07-28T08:47:50Z" finished-at="2019-07-28T08:47:51Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.LoginPageTest@10d63be]" name="TearDown" is-config="true" duration-ms="424" started-at="2019-07-28T09:30:59Z" finished-at="2019-07-28T09:31:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.optico.qa.test.LoginPageTest -->
       <class name="com.optico.qa.test.RegisterCustomerPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T08:46:56Z" finished-at="2019-07-28T08:46:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyHeadingTest()[pri:4, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="verifyHeadingTest" duration-ms="3187" started-at="2019-07-28T08:46:56Z" finished-at="2019-07-28T08:46:59Z">
+        <test-method status="FAIL" signature="verifyHeadingTest()[pri:4, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="verifyHeadingTest" duration-ms="4" started-at="2019-07-28T09:30:57Z" finished-at="2019-07-28T09:30:57Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.optico.qa.test.RegisterCustomerPageTest.verifyHeadingTest(RegisterCustomerPageTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeadingTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-28T08:46:59Z" finished-at="2019-07-28T08:46:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="setup" is-config="true" duration-ms="2" started-at="2019-07-28T08:47:00Z" finished-at="2019-07-28T08:47:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:57Z" finished-at="2019-07-28T09:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="RegisterCustomerTest" duration-ms="12557" started-at="2019-07-28T08:47:00Z" data-provider="getOpticoTestData" finished-at="2019-07-28T08:47:12Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:57Z" finished-at="2019-07-28T09:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:58Z" finished-at="2019-07-28T09:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="RegisterCustomerTest" duration-ms="4" started-at="2019-07-28T09:30:58Z" data-provider="getOpticoTestData" finished-at="2019-07-28T09:30:58Z">
           <params>
             <param index="0">
               <value>
@@ -83,18 +165,50 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.optico.qa.test.RegisterCustomerPageTest.RegisterCustomerTest(RegisterCustomerPageTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCustomerTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-28T08:47:12Z" finished-at="2019-07-28T08:47:12Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:58Z" finished-at="2019-07-28T09:30:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T08:47:12Z" finished-at="2019-07-28T08:47:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:58Z" finished-at="2019-07-28T09:30:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="RegisterCustomerTest" duration-ms="12719" started-at="2019-07-28T08:47:12Z" data-provider="getOpticoTestData" finished-at="2019-07-28T08:47:25Z">
+        <test-method status="FAIL" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="RegisterCustomerTest" duration-ms="4" started-at="2019-07-28T09:30:58Z" data-provider="getOpticoTestData" finished-at="2019-07-28T09:30:58Z">
           <params>
             <param index="0">
               <value>
@@ -132,18 +246,50 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.optico.qa.test.RegisterCustomerPageTest.RegisterCustomerTest(RegisterCustomerPageTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCustomerTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-28T08:47:25Z" finished-at="2019-07-28T08:47:25Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:59Z" finished-at="2019-07-28T09:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="setup" is-config="true" duration-ms="1" started-at="2019-07-28T08:47:25Z" finished-at="2019-07-28T08:47:25Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:59Z" finished-at="2019-07-28T09:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="RegisterCustomerTest" duration-ms="12711" started-at="2019-07-28T08:47:25Z" data-provider="getOpticoTestData" finished-at="2019-07-28T08:47:38Z">
+        <test-method status="FAIL" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="RegisterCustomerTest" duration-ms="0" started-at="2019-07-28T09:30:59Z" data-provider="getOpticoTestData" finished-at="2019-07-28T09:30:59Z">
           <params>
             <param index="0">
               <value>
@@ -181,18 +327,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.optico.qa.test.RegisterCustomerPageTest.RegisterCustomerTest(RegisterCustomerPageTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCustomerTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-28T08:47:38Z" finished-at="2019-07-28T08:47:38Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="TearDown" is-config="true" duration-ms="4" started-at="2019-07-28T09:30:59Z" finished-at="2019-07-28T09:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="setup" is-config="true" duration-ms="1" started-at="2019-07-28T08:47:38Z" finished-at="2019-07-28T08:47:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="RegisterCustomerTest" duration-ms="12535" started-at="2019-07-28T08:47:38Z" data-provider="getOpticoTestData" finished-at="2019-07-28T08:47:50Z">
+        <test-method status="FAIL" signature="RegisterCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="RegisterCustomerTest" duration-ms="2" started-at="2019-07-28T09:30:59Z" data-provider="getOpticoTestData" finished-at="2019-07-28T09:30:59Z">
           <params>
             <param index="0">
               <value>
@@ -230,10 +404,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.optico.qa.test.RegisterCustomerPageTest.RegisterCustomerTest(RegisterCustomerPageTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCustomerTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@d80b78]" name="TearDown" is-config="true" duration-ms="1" started-at="2019-07-28T08:47:50Z" finished-at="2019-07-28T08:47:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:59Z" finished-at="2019-07-28T09:30:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.RegisterCustomerPageTest@a48628]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-07-28T09:30:59Z" finished-at="2019-07-28T09:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

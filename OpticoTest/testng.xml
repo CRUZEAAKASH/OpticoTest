@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Optico Test Suite">
+	<listeners>
+		<listener class-name="com.optico.qa.util.ListenerTest" />
+	</listeners>
+
 	<test thread-count="5" name="Optico Test">
 		<classes>
 			<class name="com.optico.qa.test.LoginPageTest" />

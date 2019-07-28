@@ -34,7 +34,7 @@ public class LoginPage extends TestBase {
 	}
 
 	public RegisterCustomerPage login() {
-		String un = prop.getProperty("username");
+		String un = prop.getProperty("sername");
 		String pswd = prop.getProperty("password");
 		userName.sendKeys(un);
 		password.sendKeys(pswd);

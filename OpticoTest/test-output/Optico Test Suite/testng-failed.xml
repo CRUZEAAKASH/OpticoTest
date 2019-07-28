@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Optico Test Suite]">
+  <listeners>
+    <listener class-name="com.optico.qa.util.ListenerTest"/>
+  </listeners>
   <test thread-count="5" name="Optico Test(failed)">
     <classes>
+      <class name="com.optico.qa.test.LoginPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.optico.qa.test.LoginPageTest -->
       <class name="com.optico.qa.test.RegisterCustomerPageTest">
         <methods>
           <include name="setup"/>
+          <include name="RegisterCustomerTest" invocation-numbers="0 1 2 3"/>
           <include name="verifyHeadingTest"/>
           <include name="TearDown"/>
         </methods>

@@ -58,9 +58,9 @@ public class TestUtil extends TestBase {
 		return data;
 	}
 
-	public static void takeScreenShot() throws IOException {
+	public static void takeScreenShot(String name) throws IOException {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src,
-				new File(currentProjectdirectory + "\\Screenshots\\" + System.currentTimeMillis() + ".png"));
+				new File(currentProjectdirectory + "\\Screenshots\\" + name + System.currentTimeMillis() + ".png"));
 	}
 }
