@@ -36,11 +36,10 @@ public class TestBase {
 
 	public static void initalization() {
 		String browserName = prop.getProperty("browser");
-		System.out.print("printing browsername" + browserName);
 		if (browserName.equals("chrome")) {
 			System.out.print("Inside the loop");
 			System.setProperty("webdriver.chrome.driver",
-					currentProjectdirectory + "\\src\\main\\java\\com\\optico\\qa\\util\\chromedriver.exe");
+					currentProjectdirectory + "\\src\\main\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 			System.out.print("Printing driver object" + driver);
 		}

@@ -41,7 +41,7 @@ public class RegisterCustomerPageTest extends TestBase {
 	@Test(priority = 5, dataProvider = "getOpticoTestData")
 	public void RegisterCustomerTest(String title, String Name, String Gender, String DOB, String Age, String Mobile,
 			String Address) throws InterruptedException {
-		System.out.println("Executing Register CUstomer test case");
+		//System.out.println("Executing Register CUstomer test case");
 		LoginPageTest.registercustomer.registerCustomer(title, Name, Gender, DOB, Age, Mobile, Address);
 	}
 

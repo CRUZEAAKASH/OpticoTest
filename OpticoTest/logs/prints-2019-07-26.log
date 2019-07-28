@@ -1,0 +1,3 @@
+11:35:41.983 [main] INFO  com.optico.qa.util.WebEventListener - Clicked on [[ChromeDriver: chrome on XP (dfb29da65ee46df578d4fe40fcc838f8)] -> xpath: (//*[@class='mat-option-text'])[3]]
+11:35:42.014 [main] INFO  com.optico.qa.util.WebEventListener - After find by[[ChromeDriver: chrome on XP (dfb29da65ee46df578d4fe40fcc838f8)] -> name: customer-name]
+11:35:42.015 [main] INFO  com.optico.qa.util.WebEventListener - Before changing value of[[ChromeDriver: chrome on XP (dfb29da65ee46df578d4fe40fcc838f8)] -> name: customer-name]

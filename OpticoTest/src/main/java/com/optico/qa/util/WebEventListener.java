@@ -2,6 +2,9 @@ package com.optico.qa.util;
 
 import java.io.IOException;
 
+import org.apache.commons.math3.analysis.function.Log;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -12,95 +15,123 @@ import com.optioc.qa.base.TestBase;
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {
 
+	private static Logger log = LogManager.getLogger(WebEventListener.class.getName());
+
 	public void beforeAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Before Alerting accept");
+
+		log.info("Before Alerting accept");
 
 	}
 
 	public void afterAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("After Alerting accept");
+
+		log.info("After Alerting accept");
+
 	}
 
 	public void afterAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
+
 		System.out.println("After dismissing alert");
 	}
 
 	public void beforeAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("Before dismissing alert");
+
 	}
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Before Navigating to " + url);
+
+		log.info("Before Navigating to " + url);
+
 	}
 
 	public void afterNavigateTo(String url, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("After navigating to" + url);
+
+		log.info("After navigating to" + url);
+
 	}
 
 	public void beforeNavigateBack(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("Before navigating back");
+
 	}
 
 	public void afterNavigateBack(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("After navigating back");
+
 	}
 
 	public void beforeNavigateForward(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("Before Navigating forward");
+
 	}
 
 	public void afterNavigateForward(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("After navigating forward");
+
 	}
 
 	public void beforeNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("Before Navigating Refresh");
+
 	}
 
 	public void afterNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("After Navigating refresh");
+
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
 		System.out.println("Before Find by " + element);
+
 	}
 
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("After find by" + element);
+
+		log.info("After find by" + element);
+
 	}
 
 	public void beforeClickOn(WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Before clicking on " + element);
+
+		log.info("Before clicking on " + element);
+
 	}
 
 	public void afterClickOn(WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Clicked on " + element);
+
+		log.info("Clicked on " + element);
+
 	}
 
 	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-		System.out.println("Before changing value of" + element);
+
+		log.info("Before changing value of" + element);
+
 	}
 
 	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-		System.out.println("After changing value of" + element);
+
+		log.info("After changing value of" + element);
+
 	}
 
 	public void beforeScript(String script, WebDriver driver) {
@@ -125,7 +156,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	public void onException(Throwable throwable, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Exception Occured");
+		log.error("Exception Occured");
 		try {
 			TestUtil.takeScreenShot();
 		} catch (IOException e) {

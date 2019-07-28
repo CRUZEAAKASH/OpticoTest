@@ -1,0 +1,3 @@
+14:06:58.165 [main] INFO  com.optico.qa.util.WebEventListener - After find by[[ChromeDriver: chrome on XP (b3fcccc79fd90062d47f88c8f2a062e3)] -> xpath: //span[@class='mat-button-wrapper' and contains(text(), 'Save')]]
+14:06:58.169 [main] INFO  com.optico.qa.util.WebEventListener - Before clicking on [[ChromeDriver: chrome on XP (b3fcccc79fd90062d47f88c8f2a062e3)] -> xpath: //span[@class='mat-button-wrapper' and contains(text(), 'Save')]]
+14:06:58.240 [main] INFO  com.optico.qa.util.WebEventListener - Clicked on [[ChromeDriver: chrome on XP (b3fcccc79fd90062d47f88c8f2a062e3)] -> xpath: //span[@class='mat-button-wrapper' and contains(text(), 'Save')]]
