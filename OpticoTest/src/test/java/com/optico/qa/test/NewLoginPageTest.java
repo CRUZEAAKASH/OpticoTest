@@ -18,7 +18,6 @@ public class NewLoginPageTest extends BaseTest {
 	@Test(priority = 1, enabled = true)
 	public void ValidateLoginPageLogoTest() {
 		String logo = page.getInstance(NewLoginPage.class).ValidateLoginPageLogo();
-		System.out.println("Printing logo");
 		// String logo = loginPage.ValidateLoginPageLogo();
 		AssertJUnit.assertEquals(logo, "Optico");
 	}

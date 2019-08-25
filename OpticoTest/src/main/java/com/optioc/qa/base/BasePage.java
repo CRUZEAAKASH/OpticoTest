@@ -17,7 +17,6 @@ public class BasePage extends Page {
 
 	public BasePage(WebDriver driver) {
 		super(driver);
-
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -58,6 +57,9 @@ public class BasePage extends Page {
 	public void waitForElement(By locator) {
 		try {
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+			wait.until(ExpectedConditions.elementToBeSelected(locator));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

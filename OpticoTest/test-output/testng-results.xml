@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="127539" started-at="2019-08-25T17:37:31Z" finished-at="2019-08-25T17:39:38Z">
+  <suite name="Suite" duration-ms="56963" started-at="2019-08-25T18:28:48Z" finished-at="2019-08-25T18:29:45Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="127539" started-at="2019-08-25T17:37:31Z" finished-at="2019-08-25T17:39:38Z">
+    <test name="Test" duration-ms="56963" started-at="2019-08-25T18:28:48Z" finished-at="2019-08-25T18:29:45Z">
       <class name="com.optico.qa.test.NewLoginPageTest">
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="setUpTest" is-config="true" duration-ms="51088" started-at="2019-08-25T17:37:31Z" finished-at="2019-08-25T17:38:22Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="setUpTest" is-config="true" duration-ms="32337" started-at="2019-08-25T18:28:48Z" finished-at="2019-08-25T18:29:20Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="ValidateLoginPageLogoTest" duration-ms="105" started-at="2019-08-25T17:38:22Z" finished-at="2019-08-25T17:38:22Z">
+        <test-method status="PASS" signature="ValidateLoginPageLogoTest()[pri:1, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="ValidateLoginPageLogoTest" duration-ms="280" started-at="2019-08-25T18:29:20Z" finished-at="2019-08-25T18:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLoginPageLogoTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="TearDown" is-config="true" duration-ms="456" started-at="2019-08-25T17:38:22Z" finished-at="2019-08-25T17:38:23Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="TearDown" is-config="true" duration-ms="856" started-at="2019-08-25T18:29:20Z" finished-at="2019-08-25T18:29:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="setUpTest" is-config="true" duration-ms="28366" started-at="2019-08-25T17:38:23Z" finished-at="2019-08-25T17:38:51Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="setUpTest" is-config="true" duration-ms="11106" started-at="2019-08-25T18:29:21Z" finished-at="2019-08-25T18:29:32Z">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="verifyTitleTest" duration-ms="8" started-at="2019-08-25T17:38:51Z" finished-at="2019-08-25T17:38:51Z">
+        <test-method status="PASS" signature="verifyTitleTest()[pri:2, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="verifyTitleTest" duration-ms="16" started-at="2019-08-25T18:29:32Z" finished-at="2019-08-25T18:29:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="TearDown" is-config="true" duration-ms="638" started-at="2019-08-25T17:38:51Z" finished-at="2019-08-25T17:38:52Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="TearDown" is-config="true" duration-ms="368" started-at="2019-08-25T18:29:32Z" finished-at="2019-08-25T18:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="setUpTest" is-config="true" duration-ms="45651" started-at="2019-08-25T17:38:52Z" finished-at="2019-08-25T17:39:37Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="setUpTest" is-config="true" duration-ms="10945" started-at="2019-08-25T18:29:33Z" finished-at="2019-08-25T18:29:44Z">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="loginTest" duration-ms="556" started-at="2019-08-25T17:39:37Z" finished-at="2019-08-25T17:39:38Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="loginTest" duration-ms="616" started-at="2019-08-25T18:29:44Z" finished-at="2019-08-25T18:29:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="TearDown" is-config="true" duration-ms="580" started-at="2019-08-25T17:39:38Z" finished-at="2019-08-25T17:39:38Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.optico.qa.test.NewLoginPageTest@14b1c02]" name="TearDown" is-config="true" duration-ms="384" started-at="2019-08-25T18:29:44Z" finished-at="2019-08-25T18:29:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
