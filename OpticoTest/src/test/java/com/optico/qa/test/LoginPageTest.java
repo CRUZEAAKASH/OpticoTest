@@ -1,5 +1,7 @@
 package com.optico.qa.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -27,13 +29,13 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 1)
 	public void ValidateLoginPageLogoTest() {
 		String logo = loginPage.ValidateLoginPageLogo();
-		Assert.assertEquals(logo, "Optico");
+		AssertJUnit.assertEquals(logo, "Optico");
 	}
 
 	@Test(priority = 2)
 	public void verifyTitleTest() {
 		String title = loginPage.verifyTitle();
-		Assert.assertEquals(title, "Optico");
+		AssertJUnit.assertEquals(title, "Optico");
 	}
 
 	@Test(priority = 3)

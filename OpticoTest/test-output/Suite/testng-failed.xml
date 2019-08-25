@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.optico.qa.test.RegisterCustomerPageTest">
+      <class name="com.optico.qa.test.NewLoginPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="RegisterCustomerTest"/>
-          <include name="verifyHeadingTest"/>
+          <include name="verifyTitleTest"/>
+          <include name="setUpTest"/>
+          <include name="ValidateLoginPageLogoTest"/>
           <include name="TearDown"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.optico.qa.test.RegisterCustomerPageTest -->
+      </class> <!-- com.optico.qa.test.NewLoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

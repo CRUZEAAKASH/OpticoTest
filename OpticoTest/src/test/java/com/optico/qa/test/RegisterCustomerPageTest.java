@@ -1,5 +1,7 @@
 package com.optico.qa.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -35,7 +37,7 @@ public class RegisterCustomerPageTest extends TestBase {
 	public void verifyHeadingTest() {
 		String heading = LoginPageTest.registercustomer.verifyHeading();
 		System.out.println("printing heading" + heading);
-		Assert.assertEquals(heading, "Register Customer");
+		AssertJUnit.assertEquals(heading, "Register Customer");
 	}
 
 	@Test(priority = 5, dataProvider = "getOpticoTestData")
