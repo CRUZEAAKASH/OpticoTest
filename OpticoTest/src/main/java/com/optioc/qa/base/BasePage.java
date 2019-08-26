@@ -76,4 +76,58 @@ public class BasePage extends Page {
 
 	}
 
+	@Override
+	public boolean Click_Element(By Locator) {
+		try {
+			WebElement element = null;
+			element = getElement(Locator);
+			if (element.isDisplayed() && element.isEnabled()) {
+				element.click();
+				System.out.println("Clicked At Element " + element.toString());
+				return true;
+			} else {
+				WaitForElement_To_Be_Clickable(Locator);
+				element.click();
+				System.out.println("Took Time To Click At  Element " + element.toString());
+				return true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean send_keys(By Locator, String keys) {
+		try {
+			WebElement element = null;
+			element = getElement(Locator);
+			if (element.isDisplayed() && element.isEnabled()) {
+				element.sendKeys(keys);
+				System.out.println("Sent Keys At  " + element.toString());
+				return true;
+			} else {
+				waitForElement(Locator);
+				element.sendKeys(keys);
+				System.out.println("Took Time To Sent Keys At  " + element.toString());
+				return true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+
+	}
+
+	@Override
+	public void WaitForElement_To_Be_Clickable(By locator) {
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+		} catch (Exception e) {
+			System.out.println("Error Occured While Waiting for the Element to be Clickable");
+			e.printStackTrace();
+		}
+
+	}
+
 }

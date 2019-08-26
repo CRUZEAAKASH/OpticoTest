@@ -23,7 +23,13 @@ public abstract class Page {
 
 	public abstract void waitForElement(By locator);
 
+	public abstract void WaitForElement_To_Be_Clickable(By locator);
+
 	public abstract void waitForPageTitle(String title);
+
+	public abstract boolean Click_Element(By Locator);
+
+	public abstract boolean send_keys(By Locator, String keys);
 
 	public <TPage extends BasePage> TPage getInstance(Class<TPage> pageClass) {
 		try {
