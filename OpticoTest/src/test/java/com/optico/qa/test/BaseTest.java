@@ -3,9 +3,6 @@
  */
 package com.optico.qa.test;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -21,7 +18,7 @@ import com.optioc.qa.base.Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
- * @author aakas
+ * @author aakash
  *
  */
 public class BaseTest {
@@ -29,7 +26,7 @@ public class BaseTest {
 	WebDriver driver;
 	public Page page;
 	public Properties prop;
-	public String currentProjectdirectory = System.getProperty("user.dir");
+	// public String currentProjectdirectory = System.getProperty("user.dir");
 
 	/**
 	 * 
@@ -52,28 +49,22 @@ public class BaseTest {
 		} else {
 			System.out.println("No browser is defined in testng.xml");
 		}
-
-		/**
-		 * Defining the property file
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		/*
+		 * driver.manage().timeouts().pageLoadTimeout(PageClass.pageLoadTimeout,
+		 * TimeUnit.SECONDS);
+		 * driver.manage().timeouts().implicitlyWait(PageClass.implicitlyWait,
+		 * TimeUnit.SECONDS);
 		 */
-
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					currentProjectdirectory + "\\src\\main\\java\\com\\optico\\qa\\config\\config.properties");
-			prop.load(ip);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		page = new BasePage(driver);
+		driver.get(page.prop.getProperty("url"));
 		/**
 		 * Loading the URL
 		 */
 		driver.get(prop.getProperty("url"));
-		driver.get("https://optico.herokuapp.com/");
-		driver.manage().deleteAllCookies();
-		page = new BasePage(driver);
+		// driver.get("https://optico.herokuapp.com/");
+
 	}
 
 	@AfterMethod

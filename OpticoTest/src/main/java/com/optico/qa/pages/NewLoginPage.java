@@ -3,6 +3,9 @@
  */
 package com.optico.qa.pages;
 
+import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,24 +19,20 @@ import com.optioc.qa.base.BasePage;
  */
 public class NewLoginPage extends BasePage {
 
-	// Page Factory
-	@FindBy(name = "email")
-	private WebElement userName;
+	private By userName = By.name("email");
 
-	@FindBy(name = "password")
-	private WebElement password;
+	private By password = By.name("password");
 
-	@FindBy(xpath = "//span[contains(text(), ' Login ')]")
-	private WebElement login;
+	private By login = By.xpath("//span[contains(text(), ' Login ')]");
 
-	@FindBy(xpath = "//*[@class='title']")
-	WebElement logo;
+	private By logo = By.xpath("//*[@class='title']");
 
 	/**
 	 * 
+	 * @throws IOException
 	 * @declare constructor
 	 */
-	public NewLoginPage(WebDriver driver) {
+	public NewLoginPage(WebDriver driver) throws IOException {
 		super(driver);
 		PageFactory.initElements(driver, this);
 		// TODO Auto-generated constructor stub
@@ -43,21 +42,21 @@ public class NewLoginPage extends BasePage {
 	 * @return the userName
 	 */
 	public WebElement getUserName() {
-		return userName;
+		return getElement(userName);
 	}
 
 	/**
 	 * @return the password
 	 */
 	public WebElement getPassword() {
-		return password;
+		return getElement(password);
 	}
 
 	/**
 	 * @return the login
 	 */
 	public WebElement getLogin() {
-		return login;
+		return getElement(login);
 	}
 
 	/**
@@ -65,13 +64,21 @@ public class NewLoginPage extends BasePage {
 	 */
 	public WebElement getLogo() {
 		System.out.println("priniting logo element" + logo);
-		return logo;
+		return getElement(logo);
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String ValidateLoginPageLogo() {
-		return logo.getText();
+		return getElement(logo).getText();
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String verifyTitle() {
 		// return driver.getTitle();
 		return getPageTitle();
@@ -84,9 +91,9 @@ public class NewLoginPage extends BasePage {
 	public NewRegisterCustomerPage login() {
 		String un = prop.getProperty("username");
 		String pswd = prop.getProperty("password");
-		userName.sendKeys(un);
-		password.sendKeys(pswd);
-		login.click();
+		send_keys(userName, un);
+		send_keys(password, pswd);
+		Click_Element(login);
 
 		return getInstance(NewRegisterCustomerPage.class);// return new RegisteredCustomerPage();
 

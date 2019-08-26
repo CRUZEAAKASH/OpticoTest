@@ -1,5 +1,9 @@
 package com.optioc.qa.base;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,10 +13,19 @@ public abstract class Page {
 
 	WebDriver driver;
 	WebDriverWait wait;
+	public Properties prop;
+	long pageLoadTimeout = 20;
+	long implicitlyWait = 20;
+	long ExplicitWait = 15;
+	String configLocation = "\\src\\main\\java\\com\\optico\\qa\\config\\config.properties";
 
-	public Page(WebDriver driver) {
+	public Page(WebDriver driver) throws IOException {
 		this.driver = driver;
 		this.wait = new WebDriverWait(this.driver, 15);
+		prop = new Properties();
+		FileInputStream file = new FileInputStream(System.getProperty("user.dir") + configLocation);
+		prop.load(file);
+		file.close();
 	}
 
 	public abstract String getPageTitle();

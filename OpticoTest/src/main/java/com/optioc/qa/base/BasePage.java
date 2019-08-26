@@ -15,7 +15,7 @@ public class BasePage extends Page {
 	public Properties prop;
 	public String currentProjectdirectory = System.getProperty("user.dir");
 
-	public BasePage(WebDriver driver) {
+	public BasePage(WebDriver driver) throws IOException {
 		super(driver);
 		try {
 			prop = new Properties();
@@ -98,16 +98,16 @@ public class BasePage extends Page {
 	}
 
 	@Override
-	public boolean send_keys(By Locator, String keys) {
+	public boolean send_keys(By locator, String keys) {
+		WebElement element = null;
+		element = getElement(locator);
 		try {
-			WebElement element = null;
-			element = getElement(Locator);
 			if (element.isDisplayed() && element.isEnabled()) {
 				element.sendKeys(keys);
 				System.out.println("Sent Keys At  " + element.toString());
 				return true;
 			} else {
-				waitForElement(Locator);
+				waitForElement(locator);
 				element.sendKeys(keys);
 				System.out.println("Took Time To Sent Keys At  " + element.toString());
 				return true;

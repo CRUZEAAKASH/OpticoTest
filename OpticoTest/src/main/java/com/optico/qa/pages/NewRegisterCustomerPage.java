@@ -3,11 +3,10 @@
  */
 package com.optico.qa.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.optico.qa.util.TestUtil;
@@ -19,53 +18,42 @@ import com.optioc.qa.base.BasePage;
  */
 public class NewRegisterCustomerPage extends BasePage {
 
-	@FindBy(xpath = "//*[@class='mat-card-title']")
-	@CacheLookup
-	WebElement registerCustomerHeading;
+	private By registerCustomerHeading = By.xpath("//*[@class='mat-card-title']");
 
-	@FindBy(xpath = "//*[@class='mat-select-value']")
-	WebElement title;
+	private By title = By.xpath("//*[@class='mat-select-value']");
 
-	@FindBy(xpath = "(//*[@class='mat-option-text'])[3]")
-	WebElement salutation;
+	private By salutation = By.xpath("(//*[@class='mat-option-text'])[3]");
 
-	@FindBy(name = "customer-name")
-	WebElement Name;
+	private By Name = By.name("customer-name");
 
-	@FindBy(name = "customer-dob")
-	WebElement DOB;
+	private By DOB = By.name("customer-dob");
 
-	@FindBy(xpath = "//*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']")
-	WebElement datePicker;
+	private By datePicker = By.xpath("//*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']");
 
-	@FindBy(xpath = "//*[@class='mat-calendar-arrow']")
-	WebElement YearDropDown;
+	private By YearDropDown = By.xpath("//*[@class='mat-calendar-arrow']");
 
-	@FindBy(xpath = "//*[@aria-label = 'Previous 20 years']")
-	WebElement previousYear;
+	private By previousYear = By.xpath("//*[@aria-label = 'Previous 20 years']");
 
-	@FindBy(xpath = "//*[@class='mat-calendar-body-cell-content' and contains(text(), '1992')]")
-	WebElement Year;
+	private By Year = By.xpath("//*[@class='mat-calendar-body-cell-content' and contains(text(), '1992')]");
 
-	@FindBy(xpath = "//*[@class='mat-calendar-body-cell-content' and contains(text(), 'JAN')]")
-	WebElement Month;
+	private By Month = By.xpath("//*[@class='mat-calendar-body-cell-content' and contains(text(), 'JAN')]");
 
-	@FindBy(xpath = "//*[@class='mat-calendar-body-cell-content' and contains(text(), '10')]")
-	WebElement Date;
+	private By Date = By.xpath("//*[@class='mat-calendar-body-cell-content' and contains(text(), '10')]");
 
-	@FindBy(name = "customer-mobile")
-	WebElement Mobile;
+	private By Mobile = By.name("customer-mobile");
 
-	@FindBy(name = "customer-address")
-	WebElement address;
+	private By address = By.name("customer-address");
 
-	@FindBy(xpath = "//span[@class='mat-button-wrapper' and contains(text(), 'Save')]")
-	WebElement save;
+	private By save = By.xpath("//span[@class='mat-button-wrapper' and contains(text(), 'Save')]");
 
-	@FindBy(xpath = "//div[contains(text(), 'New Customer')]")
-	WebElement newCustomer;
+	private By newCustomer = By.xpath("//div[contains(text(), 'New Customer')]");
 
-	public NewRegisterCustomerPage(WebDriver driver) {
+	/**
+	 * 
+	 * @param driver
+	 * @throws IOException
+	 */
+	public NewRegisterCustomerPage(WebDriver driver) throws IOException {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
@@ -79,34 +67,29 @@ public class NewRegisterCustomerPage extends BasePage {
 		}
 		TestUtil.wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Register Customer')]")));
-		String heading = registerCustomerHeading.getText();
+		String heading = getElement(registerCustomerHeading).getText();
 		return heading;
 	}
 
 	public ViewCustomerPage registerCustomer(String Customertitle, String CustomerName, String CustomerGender,
 			String CustomerDOB, String CustomerAge, String CustomerMobile, String CustomerAddress)
 			throws InterruptedException {
-		newCustomer.click();
-		title.click();
-		salutation.click();
-		Name.sendKeys(CustomerName);
+		Click_Element(newCustomer);
+		Click_Element(title);
+		Click_Element(salutation);
+		send_keys(Name, CustomerName);
 		Thread.sleep(3000);
-
-		datePicker.click();
+		Click_Element(datePicker);
 		Thread.sleep(1000);
-		YearDropDown.click();
-
-		previousYear.click();
-
-		Year.click();
-
-		Month.click();
-
-		Date.click();
+		Click_Element(YearDropDown);
+		Click_Element(previousYear);
+		Click_Element(Year);
+		Click_Element(Month);
+		Click_Element(Date);
 		Thread.sleep(1000);
-		Mobile.sendKeys(CustomerMobile);
-		address.sendKeys(CustomerAddress);
-		save.click();
+		send_keys(Mobile, CustomerMobile);
+		send_keys(address, CustomerAddress);
+		Click_Element(save);
 		Thread.sleep(5000);
 		return new ViewCustomerPage();
 	}
